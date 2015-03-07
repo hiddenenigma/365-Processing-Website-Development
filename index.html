@@ -1,0 +1,280 @@
+<!doctype html>
+<!--[if lte IE 8]>     <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="keywords" content="Processing, 365 Project, hiddenenigma">
+	<meta name="author" content="Peter Ha">
+	<meta name="description" content="One visual sketch a day in Processing" />
+	<title>365 Processing</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- Reference to html5gallery.js -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
+
+	<style type="text/css">
+
+		#html5-close {
+			position: absolute !important;
+			top: -30px !important;
+		}
+
+		#html5-prev {
+		    margin-left: -100px !important;
+		    display: block !important;
+		    opacity: 1 !important;
+		}
+
+		#html5-next {
+		    margin-right: -100px !important;
+		    display: block !important;
+		    opacity: 1 !important;
+		}
+
+		#html5-next img, #html5-prev img, #html5-close img {
+			max-width: 50%;
+		} 
+
+		#html5-elem-box {
+		    overflow: visible !important;
+		}
+
+		#html5-lightbox-overlay {
+		    opacity: 0.9 !important;
+		}
+
+		.html5boxVideoControlsBg, .html5boxVolume, .html5boxVideoControls {
+			display: none !important;
+		}
+
+		#html5-text {
+			text-align: center !important;
+			color: #FFF !important;
+			padding-top: 20px !important;
+			font-family: 'Inconsolata', Helvetica, sans-serif !important;
+			font-size: 1.5rem !important;
+		}
+
+		#html5-elem-data-box {
+			position: absolute !important;
+			background-color: transparent !important;
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+
+	<!-- Header -->
+	<div class="navbar-header">
+		<a class="navbar-brand" href="#">
+			365 PROCESSING
+		</a>
+	</div>
+
+	<div id="filters" class="button-group">
+		<button class="button is-checked" data-filter="*">ALL MONTHS</button>
+		<button class="button" data-filter=".january">JANUARY</button>
+		<button class="button" data-filter=".february">FEBRUARY</button>
+		<button class="button" data-filter=".march">MARCH</button>
+		<button class="button" data-filter=".april">APRIL</button>
+		<button class="button" data-filter=".may">MAY</button>
+		<button class="button" data-filter=".june">JUNE</button>
+		<button class="button" data-filter=".july">JULY</button>
+		<button class="button" data-filter=".august">AUGUST</button>
+		<button class="button" data-filter=".september">SEPTEMBER</button>
+		<button class="button" data-filter=".october">OCTOBER</button>
+		<button class="button" data-filter=".november">NOVEMBER</button>
+		<button class="button" data-filter=".december">DECEMBER</button>
+	</div>
+
+	<div class="project">
+		<a href="http://www.hiddenenigma.com/videos/day1.mp4" class="html5lightbox" title="1/365" data-width="500" data-height="500" title="" data-group="project">
+		<div class="item item-h2 january">
+			<img src="http://ww1.sinaimg.cn/large/6af7ed78gw1dmdarbg3o6j.jpg">
+			<div id="overlay">
+				<div id="txt">DAY 1</div>
+			</div>
+		</div>
+		</a>
+
+		<a href="http://www.processingcities.org/wp-content/uploads/2011/12/Processing_Bordeaux_background_test_pcities.jpg" class="html5lightbox" data-width="500" data-height="500" data-group="project">
+			<div class="item item-h2">
+				<img src="http://c300221.r21.cf1.rackcdn.com/wooddove-patakk-ah-classic-processing-1384611526_b.gif">
+				<div id="overlay">
+					<div id="txt">DAY 2</div>
+				</div>
+			</div>
+		</a>
+
+		<div class="item item-h2">
+			<img src="http://data.text20.net/media/peep/example.3.jpg">
+			<div id="overlay">
+				<div id="txt">DAY 3</div>
+			</div>
+		</div>
+		<div class="item item-h2">
+			<img src="http://c300221.r21.cf1.rackcdn.com/wooddove-patakk-ah-classic-processing-1384611526_b.gif">
+			<div id="overlay">
+				<div id="txt">DAY 4</div>
+			</div>
+		</div>
+		<div class="item item-h2">
+			<img src="http://data.text20.net/media/peep/example.3.jpg">
+			<div id="overlay">
+				<div id="txt">DAY 5</div>
+			</div>
+		</div>
+		<div class="item item-h2">
+			<img src="http://c300221.r21.cf1.rackcdn.com/wooddove-patakk-ah-classic-processing-1384611526_b.gif">
+			<div id="overlay">
+				<div id="txt">DAY 6</div>
+			</div>
+		</div>
+		<div class="item item-h2">
+			<img src="http://data.text20.net/media/peep/example.3.jpg">
+			<div id="overlay">
+				<div id="txt">DAY 7</div>
+			</div>
+		</div>
+		<div class="item item-h2">
+			<img src="http://c300221.r21.cf1.rackcdn.com/wooddove-patakk-ah-classic-processing-1384611526_b.gif">
+			<div id="overlay">
+				<div id="txt">DAY 8</div>
+			</div>
+		</div>
+		<div class="item item-h2">
+			<img src="http://data.text20.net/media/peep/example.3.jpg">
+			<div id="overlay">
+				<div id="txt">DAY 9</div>
+			</div>
+		</div>
+		<div class="item item-h2">
+			<img src="http://c300221.r21.cf1.rackcdn.com/wooddove-patakk-ah-classic-processing-1384611526_b.gif">
+			<div id="overlay">
+				<div id="txt">DAY 10</div>
+			</div>
+		</div>	
+	</div>
+
+	<!-- Isotope -->
+	<script src="js/isotope.pkgd.js"></script>
+	<!-- Images Loaded -->
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+
+
+	<script>
+	(function($,sr){
+
+			// debouncing function from John Hann
+			// http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+			var debounce = function (func, threshold, execAsap) {
+				var timeout;
+
+				return function debounced () {
+					var obj = this, args = arguments;
+					function delayed () {
+						if (!execAsap)
+							func.apply(obj, args);
+						timeout = null; 
+					};
+
+					if (timeout)
+						clearTimeout(timeout);
+					else if (execAsap)
+						func.apply(obj, args);
+
+					timeout = setTimeout(delayed, threshold || 100); 
+				};
+			}
+			// smartresize 
+			jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+
+		})(jQuery,'smartresize');
+
+		// usage:
+		$(window).smartresize(function(){  
+		  // code that takes it easy...
+		});
+
+
+		// filters 
+		(function ($) {
+		// filter functions
+		var filterFns = {};
+		// bind filter button click
+		$('#filters').on( 'click', 'button', function() {
+			var filterValue = $( this ).attr('data-filter');
+			// use filterFn if matches value
+			filterValue = filterFns[ filterValue ] || filterValue;
+			$container.isotope({ filter: filterValue });
+		});
+		// change is-checked class on buttons
+		$('.button-group').each( function( i, buttonGroup ) {
+			var $buttonGroup = $( buttonGroup );
+			$buttonGroup.on( 'click', 'button', function() {
+				$buttonGroup.find('.is-checked').removeClass('is-checked');
+				$( this ).addClass('is-checked');
+			});
+		});
+
+		// shuffle content when you click on 365 Processing
+		$('.navbar-brand').on( 'click', function() {
+			$container.isotope('shuffle');
+		});
+
+		var $container = $('.project'),
+		colWidth = function () {
+			var w = $container.width(), 
+			columnNum = 1,
+			columnWidth = 0;
+			if (w > 1500) {
+				columnNum  = 6;
+			} else if (w > 1200) {
+				columnNum  = 5;				
+			} else if (w > 900) {
+				columnNum  = 4;
+			} else if (w > 600) {
+				columnNum  = 3;
+			} else if (w > 300) {
+				columnNum  = 1;
+			}
+			columnWidth = Math.floor(w/columnNum);
+			$container.find('.item').each(function() {
+				var $item = $(this),
+				multiplier_w = $item.attr('class').match(/item-w(\d)/),
+				multiplier_h = $item.attr('class').match(/item-h(\d)/),
+				width = multiplier_w ? columnWidth*multiplier_w[1] : columnWidth,
+				height = multiplier_h ? columnWidth*multiplier_h[1]*0.5 : columnWidth*0.5;
+				$item.css({
+					width: width,
+					height: height
+				});
+			});
+			return columnWidth;
+		},
+		isotope = function () {
+			$container.isotope({
+				resizable: false,
+				itemSelector: '.item',
+				masonry: {
+					columnWidth: colWidth(),
+					gutterWidth: 0
+				}
+			});
+		};
+		isotope();
+		$(window).smartresize(isotope);
+	}(jQuery));
+
+</script>
+
+</body>
+</html>
